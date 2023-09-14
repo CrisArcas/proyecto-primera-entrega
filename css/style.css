@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 6.25rem;
+    padding: 5px 10%;
+    font-family: 'Nunito Sans';
+}
+
+.header .navbar{
+    list-style: none;
+    
+}
+
+.header .navbar li{
+    display: inline-block;
+    padding: 0 1.25rem;
+    
+}
+
+.header .navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.header .navbar a:hover{
+    font-size: 20px;
+}
+
+.header .btn button{
+    font-weight: 700;
+    padding: .5625rem 1.5625rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Nunito Sans';
+}
+
+.btn button:active{
+    background-color: lightblue;
+    box-shadow: 1px 1px 10px lightblue;
+}
+
+.main .banner img{
+    height: 25rem;
+    width: 100%;
+}
+
+/*SECCIÓN PRODUCTOS*/
+
+.main .sectionProductos h1{
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: 1.5625rem;
+    letter-spacing: 5px;
+}
+/*
+.main .sectionProductos .cardsProductos{
+    padding: 1.25rem;
+}
+*/
+.main .sectionProductos .cardsProductos .sectionPrimera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionPrimera img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionSegunda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionSegunda img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionTercera{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionTercera img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .btnMas{
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: blue;
+    padding: 5px;
+}
+
+.main .sectionProductos .cardsProductos .btnMas a{
+    text-decoration: none;
+    color: white;
+}
+
+.btnMas:active{
+    box-shadow: 1px 1px 10px red;
+}
+
+.btnMas a:hover{
+    font-size: 20px;
+}
+
+/*SECCIÓN CLIENTES*/
+
+.sectionClientes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+}
+
+.sectionClientes h1{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: 1.5625rem;
+    letter-spacing: 5px;
+}
+
+.sectionClientes .nuestrosClientes{
+    background-color: lightgray;
+    height: 12.5rem;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionClientes .nuestrosClientes .cardsClientes img{
+    border-radius: 50%;
+}
+
+
+
+/*SECCIÓN FOOTER*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 1.25rem;
+    align-items: center;
+}
+
+.footer .footerItems .footerBar{
+    list-style: none;
+    font-family: 'Nunito Sans';
+}
+
+.footer .footerItems .footerBar a{
+    text-decoration: none;
+}
+
+.footer .footerRedes{
+    display: flex;
+    justify-content: center;    
+}
+
+.footer .footerRedes img{
+    padding: 15px;    
+}
+/*
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 18.75rem;
+    width: 100%;
+}
+
+.footer .footerItems .footerBar{
+    list-style: none;
+    font-family: 'Nunito Sans';
+}
+
+.footer .footerItems .footerBar a{
+    text-decoration: none;
+}
+
+.footer .footerRedes img{
+    padding: 10px;
+}
+*/
+
+/*SECCIÓN EMPRESA*/
+
+.sectionHistoria{
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    text-align: center;
+    /*padding: 5%;*/
+}
+
+.sectionHistoria .historia .tituloPrincipal{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 10px;
+}
+
+
+/*SECCIIÓN ASISTENCIA TÉCNICA*/
+
+.contacto h1{
+    text-align: center;
+}
+
+.contacto form{
+    font-family: 'Nunito Sans';
+    margin: 1.25rem;
+}
+
+.contacto form label{
+    padding: .9375rem;
+}
+
+.contacto form textarea{
+    margin: .9375rem;
+}
+
+.contacto form button{
+    font-weight: 700;
+    padding: .5625rem 1.5625rem;
+    background-color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    font-family: 'Nunito Sans';
+    margin: .9375rem;
+}
+
+
+
+
+
+
+
+@media(max-width: 320px){
+    body{
+        font-size: 12px;
+    }
+
+    .header{
+        background-color: aqua;
+        width: 100%;
+        height: 200px;
+        /*flex-direction: column;
+        align-items: center;
+        justify-content: center;*/
+    }
+
+    .header .logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .header .btn{
+        background-image: url("../assets/img/iconos/persona.png");
+    }
+    
+    .main .banner img{
+        width: 100%;
+        height: 130px;
+    }
+
+    .sectionProductos{
+        align-items: center;
+    }
+
+    .sectionClientes .nuestrosClientes{
+        width: 100%;
+        height: 100px;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+
+    .footer .footerLogo img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer .footerUbicacion iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 375px){
+    body{
+        font-size: 12px;
+    }
+
+    .header{
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /*.header .btn{
+        background-image: url("../assets/img/iconos/persona.png");
+    }*/
+    
+    .main .banner img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .sectionClientes .nuestrosClientes{
+        width: 100%;
+        height: 100px;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer .footerLogo img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer .footerUbicacion iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 425px){
+    body{
+        font-size: 12px;
+    }
+
+    /*.header{
+        background-color: aqua;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }*/
+
+    .header .logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /*.header .btn{
+        background-image: url("../assets/img/iconos/persona.png");
+    }*/
+    
+    .main .banner img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .sectionProductos img{
+        width: 250px;
+        height: 250px;
+        border-radius: .625rem;
+
+    }
+
+    .sectionClientes .nuestrosClientes{
+        width: 100%;
+        height: 100px;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer .footerLogo img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer .footerUbicacion iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .header .logo img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .header .navbar{
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .main .banner img{
+        height: 250px;
+    }
+
+    .sectionProductos .cardsProductos img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 100px;
+    } 
+
+    .footer .footerUbicacion iframe{
+        width: 250px;
+        height: 150px;
+
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*
+@media(max-width: 1200px){
+    body{
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width: 992px){
+    .main .banner img{
+        height: 300px;
+    }
+
+    .sectionClientes .nuestrosClientes{
+        width: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 15px;
+    }
+}
+
+
+@media(max-width: 780px){
+    .header .logo img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .header .navbar{
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .main .banner img{
+        height: 250px;
+    }
+
+    .sectionProductos .cardsProductos img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 100px;
+    } 
+
+    .footer .footerUbicacion iframe{
+        width: 250px;
+        height: 150px;
+
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 425px){
+    .header .logo img{
+        padding-top: 40px;
+    }
+    
+    .main .banner img{
+        width: 100%;
+        height: 12.5rem;
+    }
+
+    .sectionClientes .nuestrosClientes .cardsClientes img{
+        width: 100%;
+        height: 80px;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+
+    .footer .footerLogo img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer .footerRedes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 320px){
+    .header{
+        width: 100%;
+    }
+
+    .main .banner img{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .header .logo img{
+        padding-top: 40px;
+    }
+    
+    .main .banner img{
+        width: 100%;
+    }
+}
+*/
