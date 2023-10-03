@@ -1,0 +1,23 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 1.25rem;
+    align-items: center;
+    .footerBar{
+        list-style: none;
+        font-family: 'Nunito Sans';
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .footerRedes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        img{
+            padding: 15px;
+        }
+    }
+}

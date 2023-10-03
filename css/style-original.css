@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    padding: 5px 10%;
+    width: 100%;
+    height: 9.375rem;
+}
+/*.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 6.25rem;
+    padding: 5px 10%;
+    font-family: 'Nunito Sans';
+}*/
+
+.header .navbar{
+    list-style: none;
+    
+}
+
+.header .navbar li{
+    display: inline-block;
+    padding: 0 1.25rem;
+    
+}
+
+.header .navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.header .navbar a:hover{
+    font-size: 20px;
+}
+
+.header .btn button{
+    font-weight: 700;
+    padding: .5625rem 1.5625rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Nunito Sans';
+}
+
+.btn button:active{
+    background-color: lightblue;
+    box-shadow: 1px 1px 10px lightblue;
+}
+
+.main .banner img{
+    height: 25rem;
+    width: 100%;
+}
+
+/*SECCIÓN PRODUCTOS*/
+
+.main .sectionProductos h1{
+    font-family: 'Nunito Sans';
+    font-size: 1.5625rem;
+    text-align: center;
+    padding: 1.5625rem;
+    letter-spacing: 5px;
+}
+/*
+.main .sectionProductos .cardsProductos{
+    padding: 1.25rem;
+}
+*/
+.main .sectionProductos .cardsProductos .sectionPrimera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.cardsProductos h3{
+    font-size: 1.125rem;
+    font-family: 'Nunito Sans';
+}
+
+.main .sectionProductos .cardsProductos .sectionPrimera img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionSegunda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionSegunda img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionTercera{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    padding: .9375rem;
+}
+
+.main .sectionProductos .cardsProductos .sectionTercera img{
+    height: 12.5rem;
+    border-radius: .625rem;
+}
+
+.main .sectionProductos .cardsProductos .btnMas{
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: blue;
+    padding: 5px;
+}
+
+.main .sectionProductos .cardsProductos .btnMas a{
+    text-decoration: none;
+    color: white;
+}
+
+.btnMas:active{
+    box-shadow: 1px 1px 10px red;
+}
+
+.btnMas a:hover{
+    font-size: 20px;
+}
+
+/*SECCIÓN CLIENTES*/
+
+.sectionClientes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+}
+
+.sectionClientes h1{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    font-family: 'Nunito Sans';
+    font-size: 1.5625rem;
+    text-align: center;
+    padding: 1.5625rem;
+    letter-spacing: 5px;
+}
+
+.sectionClientes .nuestrosClientes{
+    background-color: lightgray;
+    height: 12.5rem;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionClientes .nuestrosClientes .cardsClientes img{
+    border-radius: 50%;
+}
+
+
+
+/*SECCIÓN FOOTER*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 1.25rem;
+    align-items: center;
+}
+
+.footer .footerItems .footerBar{
+    list-style: none;
+    font-family: 'Nunito Sans';
+}
+
+.footer .footerItems .footerBar a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footerRedes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.footer .footerRedes img{
+    padding: 15px;    
+}
+
+/*SECCIÓN EMPRESA*/
+
+.sectionHistoria{
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    text-align: center;
+    /*padding: 5%;*/
+}
+
+.sectionHistoria .historia .tituloPrincipal{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 10px;
+}
+
+
+/*SECCIIÓN ASISTENCIA TÉCNICA*/
+
+.contacto h1{
+    font-family: 'Nunito Sans';
+    text-align: center;
+}
+
+.contacto form{
+    font-family: 'Nunito Sans';
+    margin: 1.25rem;
+}
+
+.contacto form label{
+    padding: .9375rem;
+}
+
+.contacto form textarea{
+    margin: .9375rem;
+}
+
+.contacto form button{
+    font-weight: 700;
+    padding: .5625rem 1.5625rem;
+    background-color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    font-family: 'Nunito Sans';
+    margin: .9375rem;
+}
+
+
+
+
+@media (max-width: 1024px){
+    .carousel-inner img{
+        width: 1200px;
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .sectionClientes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nuestrosClientes img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .carousel-inner img{
+        width: 750px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .nuestrosClientes img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px){
+    .carousel-inner img{
+        width: 420px;
+        height: 200px;
+    }
+
+    .nuestrosClientes img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .footerLogo img{
+        width: 200px;
+        height: 200px;
+    }
+}

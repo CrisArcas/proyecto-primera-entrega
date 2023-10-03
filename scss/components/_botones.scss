@@ -1,0 +1,14 @@
+.btnMas{
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: blue;
+    padding: 5px;
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+}

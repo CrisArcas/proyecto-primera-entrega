@@ -1,0 +1,24 @@
+.contacto h1{
+    text-align: center;
+}
+form{
+    margin-left: 20px;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    label{
+        padding: .3125rem;
+    }
+    textarea{
+        margin: .3125rem;
+    }
+    button{
+        font-weight: 700;
+        padding: .5625rem 1.5625rem;
+        background-color: #D9D9D9;
+        border: none;
+        cursor: pointer;
+        border-radius: 1.25rem;
+        font-family: 'Nunito Sans';
+        margin: .9375rem;
+    }
+}

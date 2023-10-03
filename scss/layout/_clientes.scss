@@ -1,0 +1,27 @@
+.sectionClientes{
+    @include grid;
+    align-items: center;
+    h1{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        font-family: 'Nunito Sans';
+        font-size: 1.5625rem;
+        text-align: center;
+        padding: 1.5625rem;
+        letter-spacing: 5px;
+    }
+    .nuestrosClientes{
+        background-color: $backgroundcli;
+        height: 12.5rem;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            border-radius: 50%;
+        }
+    }
+}

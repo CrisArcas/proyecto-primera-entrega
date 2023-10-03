@@ -1,0 +1,10 @@
+.sectionHistoria{
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    text-align: center;
+    .historia{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding: 10px;
+    }
+}

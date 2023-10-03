@@ -1,0 +1,26 @@
+.main .sectionProductos h1{
+    font-family: 'Nunito Sans';
+    font-size: 1.5625rem;
+    text-align: center;
+    padding: 1.5625rem;
+    letter-spacing: 5px;
+    }
+    .sectionPrimera{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-family: 'Nunito Sans';
+        text-align: center;
+        padding: .9375rem;
+        img{
+            height: 12.5rem;
+            border-radius: .625rem;
+        }
+        h3{
+            font-size: 1.25rem;
+            font-family: 'Nunito Sans';
+        }
+    }
+    .sectionSegunda{
+        @extend .sectionPrimera;
+    }
